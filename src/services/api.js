@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+const API_BASE = 'https://api.sumedhsangle.space/onelab/api';
 
 export async function generateData(count = 500, anomalyRatio = 0.15) {
   const res = await fetch(`${API_BASE}/generate-data?count=${count}&anomalyRatio=${anomalyRatio}`, {
